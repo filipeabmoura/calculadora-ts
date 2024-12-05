@@ -1,0 +1,26 @@
+{
+  "name": "my-ts-library",
+  "version": "0.1.0",
+  "description": "My TypeScript Library",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": ["typescript", "library"],
+  "author": "Filipe Moura",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/filipeabmoura/calculadora-ts"
+  },
+  "bugs": {
+    "url": "https://github.com/filipeabmoura/calculadora-ts/issues"
+  },
+  "homepage": "https://github.com/filipeabmoura/calculadora-ts#readme"
+}
