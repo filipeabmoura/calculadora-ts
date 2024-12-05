@@ -59,13 +59,4 @@ jobs:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       run: npm publish
 
-  notify:
-    needs: publish
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Notify team on Discord
-      uses: ilshidur/action-discord@v2
-      with:
-        webhook: ${{ secrets.DISCORD_WEBHOOK }}
-        message: "🚀 New version of calculator library published to npm!"
+  
